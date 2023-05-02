@@ -73,7 +73,6 @@ app.innerHTML = `
             </button>
         </div>
 
-
 </header>
 
 <div id="mobile-menu-container">
