@@ -3,65 +3,120 @@
 
 /* ----Establecer la fuente y el peso por defecto para todo el documento --------*/
 
+$font-family: 'Epilogue', sans-serif;
+$font-weight-default: 500;
+$font-weight-heading: 700;
+$color-black: black;
+$color-white: white;
+
 .container {
-  font-family: 'Epilogue', sans-serif;
-  font-weight: 500;
+  font-family: $font-family;
+  font-weight: $font-weight-default;
 }
 
 /*-------------------------- Establecer el peso de la fuente para los encabezados --------------------------*/
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
+  font-weight: $font-weight-heading;
 }
 
 html {
   padding: 1%;
 }
-/*----------------------------------- header ----------------------------*/
+
+/*----------------------------------- header SCSS----------------------------*/
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  .title {
+    margin-right: 30px;
+  }
+
+  .menus {
+    display: flex;
+    justify-content: flex-start;
+
+    .log-reg {
+      display: flex;
+      margin-left: auto;
+
+      button {
+        font-family: $font-family;
+        font-weight: $font-weight-heading;
+        font-size: 16px;
+        color: $color-white;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+
+        &.login {
+          background-color: $color-white;
+          color: $color-black;
+          cursor: pointer;
+        }
+
+        &.register {
+          background-color: $color-black;
+          margin-left: 10px;
+
+          &:hover {
+            background-color: #3e3e3e;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .menu-dropdown {
+      img {
+        margin-right: 15px;
+        margin-left: 5px;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+        a {
+          color: $color-black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          margin-right: 5px;
+        }
+      }
+
+      &:hover {
+        .dropdown-content {
+          display: block;
+        }
+      }
+    }
+  }
+
+  // ------------------------------------- boton hamburguesa ------------------------
+
+  .hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    span {
+      display: block;
+      width: 30px;
+      height: 2px;
+      background-color: $color-black;
+      margin: 5px auto;
+    }
+  }
 }
-
-.title {
-  margin-right: 30px;
-}
-
-.menus {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.log-reg {
-  display: flex;
-  margin-left: auto;
-}
-
-.log-reg {
-  display: flex;
-  margin-left: auto;
-}
-
-
-// ------------------------------------- boton hamburguesa ------------------------
-.hamburger {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-
-
-.hamburger span {
-  display: block;
-  width: 30px;
-  height: 2px;
-  background-color: black;
-  margin: 5px auto;
-}
-
 
 // ------------------------------------- boton hamburguesa ------------------------
 
@@ -201,6 +256,8 @@ body {
 
 
 
+// -----------------CSS TRADITIONAL -----------------
+
 
 
 @media screen and (min-width: 720px) {
@@ -211,11 +268,16 @@ body {
       display: none;
     }
     
+    
 }
 
 @media screen and (max-width: 720px) {
   // -----------------------hamburguer style----------------------
+  .hide-mobile {
+    display: none;
+  }
 
+ 
 
   .hamburger {
     position: relative;
@@ -224,6 +286,7 @@ body {
   
 
     // -----------------------hamburguer style----------------------
+ 
 
     #mobile-menu-container {
       position: absolute;
@@ -376,7 +439,6 @@ body {
   /* Sustituir imagen de escritorio por imagen móvil */
   .right img {
     background-image: url('/src/images/image-hero-mobile.png');
-    background-size: cover;
     background-position: center center;
   }
 

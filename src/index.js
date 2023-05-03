@@ -9,8 +9,8 @@ app.innerHTML = `
             <h1>snap</h1> 
             </div>
             <div class="menus hide-mobile" id="menu-container">
-                <div class="menu-dropdown">Features<img src="/src/images/icon-arrow-down.png" alt="">
-                    <div class="dropdown-content">
+                <div class="menu-dropdown hide-mobile">Features<img src="/src/images/icon-arrow-down.png" alt="">
+                    <div class="dropdown-content hide-mobile">
                             <a href="#">
                                 <img src="/src/images/icon-todo.png" alt="Icono" class="icon">
                                 Todo List
@@ -30,8 +30,8 @@ app.innerHTML = `
                     </div>
                 </div>
 
-                <div class="menu-dropdown">Company<img src="/src/images/icon-arrow-down.png" alt="">
-                    <div class="dropdown-content">
+                <div class="menu-dropdown hide-mobile">Company<img src="/src/images/icon-arrow-down.png" alt="">
+                    <div class="dropdown-content hide-mobile">
                             <a href="#">
                                 Todo List
                             </a>
@@ -43,16 +43,16 @@ app.innerHTML = `
                             </a>
                     </div>
                 </div> 
-                <div class="menu-dropdown">Careers<img src="/src/images/icon-arrow-down.png" alt="">
-                    <div class="dropdown-content">
+                <div class="menu-dropdown hide-mobile">Careers<img src="/src/images/icon-arrow-down.png" alt="">
+                    <div class="dropdown-content hide-mobile">
                         <a href="#">Option 1</a>
                         <a href="#">Option 2</a>
                         <a href="#">Option 3</a>
                         <a href="#">Option 4</a>
                     </div>
                 </div>
-                <div class="menu-dropdown">About<img src="/src/images/icon-arrow-down.png" alt="">
-                    <div class="dropdown-content">
+                <div class="menu-dropdown hide-mobile">About<img src="/src/images/icon-arrow-down.png" alt="">
+                    <div class="dropdown-content hide-mobile">
                         <a href="#">Option 1</a>
                         <a href="#">Option 2</a>
                         <a href="#">Option 3</a>
