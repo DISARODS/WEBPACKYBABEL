@@ -202,3 +202,5 @@ hamburgerBtn2.addEventListener('click', function() {
   hamburgerBtn.classList.toggle('active');
 });
 
+const checkmark = "Terminado"
+console.log(checkmark);
