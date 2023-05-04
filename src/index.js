@@ -8,9 +8,9 @@ app.innerHTML = `
             <div class="title">
             <h1>snap</h1> 
             </div>
-            <div class="menus hide-mobile" id="menu-container">
-                <div class="menu-dropdown hide-mobile">Features<img src="/src/images/icon-arrow-down.png" alt="">
-                    <div class="dropdown-content hide-mobile">
+            <div class="menus" id="menu-container">
+                <div class="menu-dropdown hide-for-mobile">Features<img src="/src/images/icon-arrow-down.png" alt="">
+                    <div class="dropdown-content">
                             <a href="#">
                                 <img src="/src/images/icon-todo.png" alt="Icono" class="icon">
                                 Todo List
@@ -30,8 +30,8 @@ app.innerHTML = `
                     </div>
                 </div>
 
-                <div class="menu-dropdown hide-mobile">Company<img src="/src/images/icon-arrow-down.png" alt="">
-                    <div class="dropdown-content hide-mobile">
+                <div class="menu-dropdown hide-for-mobile">Company<img src="/src/images/icon-arrow-down.png" alt="">
+                    <div class="dropdown-content">
                             <a href="#">
                                 Todo List
                             </a>
@@ -43,16 +43,16 @@ app.innerHTML = `
                             </a>
                     </div>
                 </div> 
-                <div class="menu-dropdown hide-mobile">Careers<img src="/src/images/icon-arrow-down.png" alt="">
-                    <div class="dropdown-content hide-mobile">
+                <div class="menu-dropdown hide-for-mobile">Careers<img src="/src/images/icon-arrow-down.png" alt="">
+                    <div class="dropdown-content">
                         <a href="#">Option 1</a>
                         <a href="#">Option 2</a>
                         <a href="#">Option 3</a>
                         <a href="#">Option 4</a>
                     </div>
                 </div>
-                <div class="menu-dropdown hide-mobile">About<img src="/src/images/icon-arrow-down.png" alt="">
-                    <div class="dropdown-content hide-mobile">
+                <div class="menu-dropdown hide-for-mobile">About<img src="/src/images/icon-arrow-down.png" alt="">
+                    <div class="dropdown-content">
                         <a href="#">Option 1</a>
                         <a href="#">Option 2</a>
                         <a href="#">Option 3</a>
@@ -61,7 +61,7 @@ app.innerHTML = `
                 </div>
             </div>
 
-            <div class="log-reg hide-mobile">
+            <div class="log-reg hide-for-mobile">
                 <button class="login">Login</button>
                 <button class="register">Register</button>
             </div>
@@ -77,9 +77,9 @@ app.innerHTML = `
 
 <div id="mobile-menu-container">
     <nav>
-            <div class="navbar">
+            <div class="navbar ">
                 <div class="menus" id="menu-container">
-                    <div class="menu-dropdown">Features<img src="/src/images/icon-arrow-down.png" alt="">
+                    <div class="menu-dropdown hide-desktop">Features<img src="/src/images/icon-arrow-down.png" alt="">
                         <div class="dropdown-content">
                                 <a href="#">
                                     <img src="/src/images/icon-todo.png" alt="Icono" class="icon">
@@ -100,7 +100,7 @@ app.innerHTML = `
                         </div>
                     </div>
         
-                    <div class="menu-dropdown">Company<img src="/src/images/icon-arrow-down.png" alt="">
+                    <div class="menu-dropdown hide-desktop">Company<img src="/src/images/icon-arrow-down.png" alt="">
                         <div class="dropdown-content">
                                 <a href="#">
                                     Todo List
@@ -113,7 +113,7 @@ app.innerHTML = `
                                 </a>
                         </div>
                     </div> 
-                    <div class="menu-dropdown">Careers<img src="/src/images/icon-arrow-down.png" alt="">
+                    <div class="menu-dropdown hide-desktop">Careers<img src="/src/images/icon-arrow-down.png" alt="">
                         <div class="dropdown-content">
                             <a href="#">Option 1</a>
                             <a href="#">Option 2</a>
@@ -121,7 +121,7 @@ app.innerHTML = `
                             <a href="#">Option 4</a>
                         </div>
                     </div>
-                    <div class="menu-dropdown">About<img src="/src/images/icon-arrow-down.png" alt="">
+                    <div class="menu-dropdown hide-desktop">About<img src="/src/images/icon-arrow-down.png" alt="">
                         <div class="dropdown-content">
                             <a href="#">Option 1</a>
                             <a href="#">Option 2</a>
@@ -130,7 +130,7 @@ app.innerHTML = `
                         </div>
                     </div>
                 </div>
-                <div class="log-reg">
+                <div class="log-reg hide-desktop">
                     <button class="login">Login</button>
                     <button class="register">Register</button>
                 </div>
@@ -163,8 +163,11 @@ app.innerHTML = `
         </div>
 
         
-        <div class="right">
+        <div class="right hide-for-mobile">
             <img src="/src/images/image-hero-desktop.png" alt="">
+        </div>
+        <div class="right hide-desktop">
+            <img src="/src/images/image-hero-mobile.png" alt="">
         </div>
     </div>
 </body>
