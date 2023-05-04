@@ -65,7 +65,6 @@ app.innerHTML = `
                 <button class="login">Login</button>
                 <button class="register">Register</button>
             </div>
-
             <button type="button" id="hamburger" class="hamburger">
                 <span></span>
                 <span></span>
