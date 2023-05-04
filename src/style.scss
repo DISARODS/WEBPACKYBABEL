@@ -254,6 +254,9 @@ body {
   object-fit: cover;
 }
 
+.hide-mobile {
+  width: 60%;
+}
 
 
 // -----------------CSS TRADITIONAL -----------------
@@ -264,25 +267,34 @@ body {
     .mobile-menu-container{
       display: none;
     }
+    
     .hamburger {
       display: none;
     }
-    
-    
+    .show {
+      display: none;
+    }
+
+    .hide-desktop{
+      display: none;
+    }
+
+  
 }
 
 @media screen and (max-width: 720px) {
   // -----------------------hamburguer style----------------------
-  .hide-mobile {
-    display: none;
-  }
-
- 
+  
 
   .hamburger {
     position: relative;
     z-index: 1;
   }
+  
+  .hide-for-mobile{
+    display: none;
+  }
+
   
 
     // -----------------------hamburguer style----------------------
@@ -437,10 +449,7 @@ body {
   }
 
   /* Sustituir imagen de escritorio por imagen móvil */
-  .right img {
-    background-image: url('/src/images/image-hero-mobile.png');
-    background-position: center center;
-  }
+  
 
   
 }
