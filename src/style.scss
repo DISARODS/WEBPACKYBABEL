@@ -26,10 +26,12 @@ html {
 
 /*----------------------------------- header SCSS----------------------------*/
 
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 
   .title {
     margin-right: 30px;
@@ -149,11 +151,11 @@ html {
 
 
 /* ---------------------------------- body --------------------------------------- */
+
 $body-font-size: 16px; //Cambiar el tamaño de fuente
 $main-content-font-size: 1.5em; //Ajustar el tamaño de fuente para el contenido principal
 
 body {
-  margin: 0;
   font-size: $body-font-size;
 }
 
@@ -250,7 +252,6 @@ body {
       display: none;
     }
 
-  
 }
 
 @media screen and (max-width: 720px) {
